@@ -1,3 +1,5 @@
+
+
 name: Android Debug APK
 
 on:
@@ -17,8 +19,6 @@ jobs:
           java-version: '17'
 
       - uses: gradle/actions/setup-gradle@v4
-
-      - uses: android-actions/setup-android@v3
 
       - name: Build APK
         run: gradle assembleDebug
